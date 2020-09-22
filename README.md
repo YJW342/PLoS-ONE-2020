@@ -7,3 +7,5 @@ The installation of MATLAB could follow the instruction in MathWorks: https://ww
 ## Files in Every Folder
 Folder 'Periodic_Solution' contains MATLAB codes and simulation files to generate and plot the periodic solutions of various two-process models;
 
+Folder 'Terminal_Condition' contains MATLAB codes and simulation files to check the terminal condition of entrainment fot the discussion in Section 4.3;
+
