@@ -20,15 +20,8 @@ Sleep0=0;
 %         I_update(i,2)=Ishift;
 %     end
 % end
-sim('Open_Loop_shift.mdl');
+sim('Open_Loop_shift.slx');
 x(end,1)-shift
-
-load('f_Kronauer.mat');
-for i=1:size(x,1)
-    F(i)=interp1q(f(:,1),f(:,2),mod(atan2(-xc(i,2),x(i,2)),2*pi));
-end
-hold on
-plot(x([1:100:end,end],1)-shift,F([1:100:end,end]))
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +46,7 @@ for i=1:size(I_update,1)
         I_update(i,2)=Ishift;
     end
 end
-sim('Open_Loop_shift.mdl');
+sim('Open_Loop_shift.slx');
 I(:,2)=I(:,2).*(1-Sleep(:,2));
 box1=[];box2=[];boy1=[];boy2=[];
 if  I(1,2)>0
