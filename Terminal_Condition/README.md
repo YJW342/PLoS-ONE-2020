@@ -1,4 +1,4 @@
-Files in this folder check the terminal condition of the entrainment process:
+# Files in this folder check the terminal condition of the entrainment process:
 
 'Periodic_Solution_JFK_I_1000lux.mat' contains the periodic solution (reference state) of the S+C3 model;
 
