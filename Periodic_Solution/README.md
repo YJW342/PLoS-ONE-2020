@@ -8,4 +8,4 @@
 
 'f_Kronauer.mat' contains the phase response curve of the JFK model;
 
-The MATLAB Code 'Periodic_Solution.m' load the Simulink files and plot the Figure 10 in the paper.
+The MATLAB Code 'Periodic_Solution.m' load the Simulink files and plot the Figure 9 in the paper.
