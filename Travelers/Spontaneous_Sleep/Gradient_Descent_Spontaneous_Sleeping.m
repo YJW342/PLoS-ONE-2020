@@ -1,6 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Jiawei Yin
-% 02.26.2020
 % Gradient descent method light of circadian entrainment of international travelers with spontaneous sleep;
 clear all;
 close all;
@@ -137,3 +134,7 @@ for nn=1:size(time_shift,2)
     grid on
     axis([0 u(end,1) min(Gradient)/max(abs(Gradient)) 1])
 end
+
+
+    
+    
