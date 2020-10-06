@@ -1,1 +1,1 @@
-
+The code 'Gradient_Descent_Controllable_Sleeping.m' loads the Simulink files and calculates the optimal light and sleep schedule for minimum-time entrainment with controllable sleep on the S+C2 model for various time shifts.
