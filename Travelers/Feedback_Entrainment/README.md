@@ -1,1 +1,1 @@
-
+The code 'Feedback_Nearest_Neighbour_cross_validation.m' loads the training data in 'Training_Data_1000lux.mat' or 'Training_Data_10000lux.mat' and simulate the feedback entrainment through the Simulink file 'Feedback_NearestNeighbor.slx'.
