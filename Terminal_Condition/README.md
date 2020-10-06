@@ -4,4 +4,4 @@
 
 'Open_Loop_shift_notol_initial.slx' simulate the S+C3 model under reference light;
 
-'Error_check.m' load the Simulink file, generate initial points satisfying terminal condition and integrate state equation forward and check state error.
+'Error_check.m' loads the Simulink file, generates initial points satisfying terminal condition and integrates state equation forward and checks state error.
