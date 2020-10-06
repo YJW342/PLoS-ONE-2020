@@ -8,7 +8,7 @@ Imax=10000;umax=0.2208;
 tol=0.01;
 Ac=0.1333;tr=18.2;td=4.2;omega0=2*pi/24.2;alpha0=0.05;
 q = 1/3;taux = 24.2;k = 0.55;mu=0.13;G=33.75;p=0.5;I0=9500;beta=0.0075;
-Initial_Time=9;% initial local time of subjects
+Initial_Time=10;% initial local time of subjects
 x0=interp1q(Periodic_Solution(:,1),Periodic_Solution(:,2),Initial_Time-6);
 xc0=interp1q(Periodic_Solution(:,1),Periodic_Solution(:,3),Initial_Time-6);
 H0=interp1q(Periodic_Solution(:,1),Periodic_Solution(:,4),Initial_Time-6);
@@ -38,7 +38,7 @@ for nn=1:size(time_shift,2)
     plot(Sleep(:,1),Sleep(:,2),'g','linewidth',2)
     grid on
     axis([0 u(end,1) -1.3 1.3])
-    filename=strcat(num2str(nn),'_Controllable_9am_10000lux_Feedback','.mat');
+    filename=strcat(num2str(nn),'_Controllable_10am_10000lux_Feedback','.mat');
     save(filename,'Sleep','x','xc','I','u','H','n','Schedule')
 end
 figure (24)
@@ -47,11 +47,5 @@ time_shift=[1:23];
 T_Feedback=[time_shift;T_Feedback];
 hold on
 plot(T_Feedback(1,:),T_Feedback(2,:))
-save('Entrainment_Time_Feedback_9am_10000lux.mat','T_Feedback')
-
-for i=1:23
-    if T_opt(i)>T_Feedback(2,i)
-        T_opt(i)=T_Feedback(2,i);
-    end
-end
+save('Entrainment_Time_Feedback_10am_10000lux.mat','T_Feedback')
 
