@@ -7,8 +7,8 @@ The installation of MATLAB could follow the instruction in MathWorks: https://ww
 ## Files in Every Folder
 Folder 'Periodic_Solution' contains MATLAB codes and simulation files to generate and plot the periodic solutions of various two-process models;
 
-Folder 'Terminal_Condition' contains MATLAB codes and simulation files to check the terminal condition of entrainment fot the discussion in Section 4.3;
+Folder 'Terminal_Condition' contains MATLAB codes and simulation files to check the terminal condition of entrainment fot the discussion in Section 0.1 in the Appendix;
 
-Folder 'Travelers' contains MATLAB codes and simulation files to simulate the entrainment cases of the transmidian traveler in Section 5.1;
+Folder 'Travelers' contains MATLAB codes and simulation files to simulate the entrainment cases of the transmidian traveler in Section 4.1;
 
-Folder 'Shift_Workers' contains MATLAB codes and simulation files to simulate the entrainment cases of the night shift worker in Section 5.2.
+Folder 'Shift_Workers' contains MATLAB codes and simulation files to simulate the entrainment cases of the night shift worker in Section 4.2.
