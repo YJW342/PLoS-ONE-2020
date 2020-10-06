@@ -14,7 +14,7 @@ Imax=1000;
 tol=0.01;Tol=0.05;
 k=0.55;mu=0.13;q=1/3;tau=24.2;
 G=33.75;I0=9500;p=0.5;alpha0=0.05;
-for j=[12,14]%1:size(time_shift,2)
+for j=1:size(time_shift,2)
     T_OPT=[];
     x0=Periodic_Solution(time_shift(j)*100+1,2);
     xc0=Periodic_Solution(time_shift(j)*100+1,3);
@@ -70,7 +70,7 @@ for j=[12,14]%1:size(time_shift,2)
         I_update(:,2)=I_update(:,2)-eta*Gradient;
         I_update(:,2)=min(I_update(:,2),Imax);
         I_update(:,2)=max(I_update(:,2),0);
-        sim('Integration_Forward_Forger_L.mdl');
+        sim('Integration_Forward_Forger_L.slx');
         if eta==0
             break
         end
