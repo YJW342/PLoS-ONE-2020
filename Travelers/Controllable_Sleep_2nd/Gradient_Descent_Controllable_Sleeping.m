@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Jiawei Yin
 % 02.27.2020
-% Gradient descent method for sleep schedule and light of circadian entrainment of international travelers;
+% Gradient descent method for sleep schedule and light of circadian entrainment of international travelers on S+C2 model;
 clear all;
 close all;
 clc;
@@ -137,7 +137,7 @@ for n=1:size(time_shift,2)
     end
     filename=strcat(num2str(n),'_shift_Controllable_Sleep_7am_10000lux','.mat');
     save(filename,'Sleep','x','xc','u','H','R','T_optimal','Gradient')
-    T_Spontaneous(n)=T_optimal(end);
+    T_Controllable(n)=T_optimal(end);
     figure (n)
     subplot(2,1,1)
     plot(Periodic_Solution(:,1),Periodic_Solution(:,2),'b','linewidth',2)
@@ -159,3 +159,6 @@ for n=1:size(time_shift,2)
     plot(B(:,1),B(:,2),'k','linewidth',2)
     grid on
 end
+figure (24)
+plot(T_Controllable)
+grid on
