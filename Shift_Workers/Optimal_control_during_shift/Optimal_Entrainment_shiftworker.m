@@ -21,7 +21,7 @@ for i=1:size(I_update,1)
         I_update(i,2)=Ishift;
     end
 end
-sim('OL_shift.mdl');
+sim('OL_shift.slx');
 T_optimal=[];
 T_optimal(1)=x(end,1);T_opt=x(end,1)
 for j=1:40
