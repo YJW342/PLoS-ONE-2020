@@ -69,7 +69,7 @@ for j=1:40
     I_update=I;
     I_update(:,2)=I_update(:,2)-Gradient*eta1;
     I_update(:,2)=min(max(I_update(:,2),0),Imax);
-    sim('Integration_Forward_JFK.mdl');
+    sim('Integration_Forward_JFK.slx');
     T_opt=x(end,1)
     T_optimal=[T_optimal,T_opt];
     x_ref_final=interp1q(Periodic_Solution(:,1),Periodic_Solution(:,2),x(end,1));
